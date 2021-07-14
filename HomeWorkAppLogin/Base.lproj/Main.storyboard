@@ -33,6 +33,7 @@
                                         <rect key="frame" x="0.0" y="114" width="290" height="30"/>
                                         <state key="normal" title="Log in"/>
                                         <connections>
+                                            <action selector="logInAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="86g-wx-ARX"/>
                                             <segue destination="XzM-fW-Wu6" kind="presentation" id="A8e-bw-Jsv"/>
                                         </connections>
                                     </button>
@@ -66,15 +67,19 @@
                             <constraint firstItem="whG-dS-OgV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="bhW-l9-XsZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="Oed-IR-Ed3" id="NTT-9l-kHI"/>
+                        <outlet property="userNameField" destination="Wv4-dX-avZ" id="BeR-mF-eHi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="t3z-PH-5sL">
             <objects>
-                <viewController id="XzM-fW-Wu6" sceneMemberID="viewController">
+                <viewController id="XzM-fW-Wu6" customClass="WelcomeViewController" customModule="HomeWorkAppLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VIH-rR-137">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +93,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-0F-EWB">
                                 <rect key="frame" x="179.66666666666666" y="391" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutAction" destination="XzM-fW-Wu6" eventType="touchUpInside" id="tL9-G1-gcH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tof-cl-2iJ"/>
@@ -101,6 +109,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AiM-Ce-07g"/>
+                    <connections>
+                        <outlet property="welcomeMessage" destination="RHo-fh-n5l" id="emv-cJ-g0q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSf-yQ-EDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
