@@ -44,11 +44,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="145" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="bH9-Nq-EOW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYG-4K-iR6">
                                                 <rect key="frame" x="145" y="0.0" width="145" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeL-V5-ZBo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

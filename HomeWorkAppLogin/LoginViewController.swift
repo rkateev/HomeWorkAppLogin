@@ -25,6 +25,11 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+
+    
     @IBAction func logInAction() {
         if userNameField.text != userName && passwordField.text != passWord {
             showAlert(title: "Invalid username or password", message: "Please enter correct username and password")
@@ -35,6 +40,15 @@ class LoginViewController: UIViewController {
         userNameField.text = ""
         passwordField.text = ""
     }
+    
+    @IBAction func forgotUserNameAction() {
+        showAlert(title: "Oops!", message: "Your username is \(userName)")
+    }
+    
+    @IBAction func forgotPasswordAction() {
+        showAlert(title: "Oops!", message: "Your password is \(passWord)")
+    }
+    
 }
 
 extension LoginViewController {
