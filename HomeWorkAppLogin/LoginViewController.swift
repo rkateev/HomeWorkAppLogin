@@ -14,18 +14,14 @@ class LoginViewController: UIViewController {
     private let userName = "Husein"
     private let passWord = "password"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userNameMessage = "Welcome, \(userNameField.text ?? "")!"
+        welcomeVC.userNameMessage = userNameField.text
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
         view.endEditing(true)
     }
 
