@@ -23,6 +23,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <connections>
+                                            <action selector="usernameTap" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cBa-5u-Yro"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oed-IR-Ed3">
                                         <rect key="frame" x="0.0" y="57" width="290" height="34"/>
@@ -106,7 +109,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tof-cl-2iJ"/>
-                        <color key="backgroundColor" red="0.87090569734573364" green="0.83743482828140259" blue="0.95374447107315063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9291415810585022" green="0.72227531671524048" blue="0.93674427270889282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="RHo-fh-n5l" firstAttribute="centerX" secondItem="VIH-rR-137" secondAttribute="centerX" id="9Xj-9D-uKW"/>

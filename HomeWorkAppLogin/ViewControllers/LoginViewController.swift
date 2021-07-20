@@ -11,12 +11,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    private let userName = "Husein"
-    private let passWord = "password"
+    private let user = User.getUser()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userNameMessage = userNameField.text
+        welcomeVC.userNameMessage = "\(user.person.name) \(user.person.surname)"
         
     }
     
@@ -25,9 +24,13 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func usernameTap() {
+        userNameField.autocorrectionType = .no
+    }
+    
     
     @IBAction func logInAction() {
-        if userNameField.text != userName && passwordField.text != passWord {
+        if userNameField.text != user.userName && passwordField.text != user.passWord {
             showAlert(title: "Invalid username or password", message: "Please enter correct username and password")
         }
     }
@@ -38,11 +41,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUserNameAction() {
-        showAlert(title: "Oops!", message: "Your username is \(userName)")
+        showAlert(title: "Oops!", message: "Your username is \(user.userName)")
     }
     
     @IBAction func forgotPasswordAction() {
-        showAlert(title: "Oops!", message: "Your password is \(passWord)")
+        showAlert(title: "Oops!", message: "Your password is \(user.passWord)")
     }
     
 }

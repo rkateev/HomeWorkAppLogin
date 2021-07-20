@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551579D426A444F200CE5D96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551579D326A444F200CE5D96 /* User.swift */; };
 		55F197B1269DF780005BFB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F197B0269DF780005BFB6E /* AppDelegate.swift */; };
 		55F197B3269DF780005BFB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F197B2269DF780005BFB6E /* SceneDelegate.swift */; };
 		55F197B5269DF780005BFB6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F197B4269DF780005BFB6E /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551579D326A444F200CE5D96 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		55F197AD269DF780005BFB6E /* HomeWorkAppLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkAppLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F197B0269DF780005BFB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F197B2269DF780005BFB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551579CE26A42CA600CE5D96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F197B4269DF780005BFB6E /* LoginViewController.swift */,
+				55F197C4269F87D7005BFB6E /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		551579CF26A42CC800CE5D96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55F197B6269DF780005BFB6E /* Main.storyboard */,
+				55F197BB269DF781005BFB6E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		551579D026A42CFD00CE5D96 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				55F197B0269DF780005BFB6E /* AppDelegate.swift */,
+				55F197B2269DF780005BFB6E /* SceneDelegate.swift */,
+				55F197BE269DF781005BFB6E /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		551579D126A42DA400CE5D96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55F197B9269DF781005BFB6E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		551579D226A42DE000CE5D96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				551579D326A444F200CE5D96 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		55F197A4269DF780005BFB6E = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +104,11 @@
 		55F197AF269DF780005BFB6E /* HomeWorkAppLogin */ = {
 			isa = PBXGroup;
 			children = (
-				55F197B0269DF780005BFB6E /* AppDelegate.swift */,
-				55F197B2269DF780005BFB6E /* SceneDelegate.swift */,
-				55F197B4269DF780005BFB6E /* LoginViewController.swift */,
-				55F197B6269DF780005BFB6E /* Main.storyboard */,
-				55F197C4269F87D7005BFB6E /* WelcomeViewController.swift */,
-				55F197B9269DF781005BFB6E /* Assets.xcassets */,
-				55F197BB269DF781005BFB6E /* LaunchScreen.storyboard */,
-				55F197BE269DF781005BFB6E /* Info.plist */,
+				551579D226A42DE000CE5D96 /* Models */,
+				551579CE26A42CA600CE5D96 /* ViewControllers */,
+				551579CF26A42CC800CE5D96 /* Storyboards */,
+				551579D126A42DA400CE5D96 /* Resources */,
+				551579D026A42CFD00CE5D96 /* SupportFiles */,
 			);
 			path = HomeWorkAppLogin;
 			sourceTree = "<group>";
@@ -140,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551579D426A444F200CE5D96 /* User.swift in Sources */,
 				55F197B5269DF780005BFB6E /* LoginViewController.swift in Sources */,
 				55F197C5269F87D7005BFB6E /* WelcomeViewController.swift in Sources */,
 				55F197B1269DF780005BFB6E /* AppDelegate.swift in Sources */,
@@ -292,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N25G7H62X8;
-				INFOPLIST_FILE = HomeWorkAppLogin/Info.plist;
+				INFOPLIST_FILE = HomeWorkAppLogin/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N25G7H62X8;
-				INFOPLIST_FILE = HomeWorkAppLogin/Info.plist;
+				INFOPLIST_FILE = HomeWorkAppLogin/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
