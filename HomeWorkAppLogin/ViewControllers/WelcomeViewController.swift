@@ -10,11 +10,11 @@ import UIKit
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeMessage: UILabel!
     
-    var userNameMessage: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeMessage.text = "Welcome, \(userNameMessage ?? "")!"
+        welcomeMessage.text = "Welcome, \( user.person.name)!"
     }
     
     

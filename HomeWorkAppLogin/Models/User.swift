@@ -30,6 +30,6 @@ struct Person {
                     name: "Husein",
                     surname: "Dudaev",
                     age: 29,
-                    hobby: "I like to read books, go into the wild places. I love lonelyness and ")
+                    hobby: "I like to read books, go into the wild places. I love ............. ")
     }
 }
